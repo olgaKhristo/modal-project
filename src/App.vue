@@ -14,7 +14,7 @@ export default {
   components:{modal},
   data(){
     return {
-      title: 'My first Vue app))'
+      title: 'My first Vue happy app))'
     }
   },
 methods: {
