@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{title}}</h1>
-    <modal/>
+    <modal :header="header" :text="text" theme="sale"/>
     <input type="text" ref="name">
     <button @click="handleClick">click me</button>
   </div>
@@ -14,13 +14,15 @@ export default {
   components:{modal},
   data(){
     return {
-      title: 'My first Vue happy app))'
+      title: 'My first Vue happy app))',
+      header: 'sing up for giveaway',
+      text: 'Greb one you have time'
     }
   },
 methods: {
   handleClick() {
-    console.log(this.$refs.name)
-    this.$refs.name.focus()
+    
+  
   }
 }
 }
